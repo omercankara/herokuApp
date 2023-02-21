@@ -1,7 +1,7 @@
 const mysql = require("mysql2")
 const config = require("./db")
 
-let connection = mysql.createConnection(config.db)
+let connection = mysql.createConnection(config)
 
 connection.connect(function (err) {
     if (err) {
