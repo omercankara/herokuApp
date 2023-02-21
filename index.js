@@ -10,7 +10,7 @@ app.use(express.json())
 
 
 
-const db = require("./data/db")
+/* const db = require("./data/db") */
 app.use(express.json())
 
 
@@ -21,7 +21,7 @@ app.get("/", async (req, res) => {
     res.send("Test")
 })
 
-
+/* 
 app.get("/test", async (req, res) => {
 
     try {
@@ -32,7 +32,7 @@ app.get("/test", async (req, res) => {
         console.log(err);
     }
 })
-
+ */
 
 
 app.listen(process.env.PORT || 5000, () => {
